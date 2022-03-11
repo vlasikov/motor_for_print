@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-03-11T10:38:39</DateModified>
+  <DateModified>2022-03-11T13:08:27</DateModified>
   <ModuleName>sdram_ov5640_lcd</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/PC/Desktop/Xilinx/sdram_ov5640_lcd/iseconfig/sdram_ov5640_lcd.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/PC/Desktop/Xilinx/sdram_ov5640_lcd\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/PC/git/motor_for_print/sdram_ov5640_lcd/iseconfig/sdram_ov5640_lcd.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/PC/git/motor_for_print/sdram_ov5640_lcd\</ImplementationReportsDirectory>
   <DateInitialized>2015-07-10T18:16:38</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
