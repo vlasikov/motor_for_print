@@ -1,0 +1,295 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Apr 29 15:35:00 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "key1" LOCATE = SITE "C3" LEVEL 1;
+COMP "key2" LOCATE = SITE "D3" LEVEL 1;
+COMP "key3" LOCATE = SITE "E4" LEVEL 1;
+COMP "key4" LOCATE = SITE "E3" LEVEL 1;
+COMP "CLOCK" LOCATE = SITE "T8" LEVEL 1;
+COMP "flash" LOCATE = SITE "R14" LEVEL 1;
+COMP "frame" LOCATE = SITE "R16" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "j3green_led_1" LOCATE = SITE "B6" LEVEL 1;
+COMP "j3green_led_2" LOCATE = SITE "A6" LEVEL 1;
+COMP "j3green_led_3" LOCATE = SITE "A7" LEVEL 1;
+COMP "sensor1" LOCATE = SITE "P16" LEVEL 1;
+COMP "sensor2" LOCATE = SITE "N16" LEVEL 1;
+COMP "red_led_1" LOCATE = SITE "P15" LEVEL 1;
+COMP "red_led_2" LOCATE = SITE "L16" LEVEL 1;
+COMP "SMG_Data<0>" LOCATE = SITE "C7" LEVEL 1;
+COMP "SMG_Data<1>" LOCATE = SITE "E6" LEVEL 1;
+COMP "SMG_Data<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "SMG_Data<3>" LOCATE = SITE "F7" LEVEL 1;
+COMP "SMG_Data<4>" LOCATE = SITE "D6" LEVEL 1;
+COMP "SMG_Data<5>" LOCATE = SITE "E7" LEVEL 1;
+COMP "SMG_Data<6>" LOCATE = SITE "D5" LEVEL 1;
+COMP "SMG_Data<7>" LOCATE = SITE "C6" LEVEL 1;
+COMP "green_led_1" LOCATE = SITE "R15" LEVEL 1;
+COMP "green_led_2" LOCATE = SITE "M15" LEVEL 1;
+COMP "green_led_3" LOCATE = SITE "M16" LEVEL 1;
+COMP "Scan_Sig<0>" LOCATE = SITE "D8" LEVEL 1;
+COMP "Scan_Sig<1>" LOCATE = SITE "E8" LEVEL 1;
+COMP "Scan_Sig<2>" LOCATE = SITE "F9" LEVEL 1;
+COMP "Scan_Sig<3>" LOCATE = SITE "F10" LEVEL 1;
+COMP "Scan_Sig<4>" LOCATE = SITE "E10" LEVEL 1;
+COMP "Scan_Sig<5>" LOCATE = SITE "D9" LEVEL 1;
+COMP "j3sensor1" LOCATE = SITE "B8" LEVEL 1;
+COMP "j3sensor2" LOCATE = SITE "A8" LEVEL 1;
+COMP "j3red_led_1" LOCATE = SITE "B5" LEVEL 1;
+COMP "j3red_led_2" LOCATE = SITE "A5" LEVEL 1;
+PIN Mmult_n0355_pins<110> = BEL "Mmult_n0355" PINNAME CLK;
+TIMEGRP u_system_ctrl_u_sdram_pll_clkout5 = BEL "green_led_1r" BEL
+        "j3red_led_1r" BEL "j3green_led_3r" BEL "regTest" BEL "fl_key2" BEL
+        "fl_key1" BEL "fl_count2_0" BEL "fl_key3" BEL "fl_key4" BEL
+        "key1pushCount_0" BEL "key1pushCount_1" BEL "key1pushCount_2" BEL
+        "key1pushCount_3" BEL "key1pushCount_4" BEL "key1pushCount_5" BEL
+        "key1pushCount_6" BEL "key1pushCount_7" BEL "key1pushCount_8" BEL
+        "key1pushCount_9" BEL "key4pushCount_0" BEL "key4pushCount_1" BEL
+        "key4pushCount_2" BEL "key4pushCount_3" BEL "key4pushCount_4" BEL
+        "key4pushCount_5" BEL "key4pushCount_6" BEL "key4pushCount_7" BEL
+        "key4pushCount_8" BEL "key4pushCount_9" BEL "key2pushCount_0" BEL
+        "key2pushCount_1" BEL "key2pushCount_2" BEL "key2pushCount_3" BEL
+        "key2pushCount_4" BEL "key2pushCount_5" BEL "key2pushCount_6" BEL
+        "key2pushCount_7" BEL "key2pushCount_8" BEL "key2pushCount_9" BEL
+        "key3pushCount_0" BEL "key3pushCount_1" BEL "key3pushCount_2" BEL
+        "key3pushCount_3" BEL "key3pushCount_4" BEL "key3pushCount_5" BEL
+        "key3pushCount_6" BEL "key3pushCount_7" BEL "key3pushCount_8" BEL
+        "key3pushCount_9" BEL "counterTestAdd1_0" BEL "counterTestAdd1_1" BEL
+        "counterTestAdd1_2" BEL "counterTestAdd1_3" BEL "counterTestAdd1_4"
+        BEL "counterTestAdd1_5" BEL "counterTestAdd1_6" BEL
+        "counterTestAdd1_7" BEL "counterTestAdd1_8" BEL "counterTestAdd1_9"
+        BEL "counterTestAdd1_10" BEL "counterTestAdd1_11" BEL
+        "counterTestAdd1_12" BEL "counterTestAdd1_13" BEL "counterTestAdd1_14"
+        BEL "counterTestAdd1_15" BEL "counterTestAdd1_16" BEL
+        "counterTestAdd1_17" BEL "counterTestAdd1_18" BEL "counterTestAdd1_19"
+        BEL "counterTestAdd1_20" BEL "counterTestAdd1_21" BEL
+        "counterTestAdd1_22" BEL "counterTestAdd1_23" BEL "counterTestAdd1_24"
+        BEL "counterTestAdd1_25" BEL "counterTestAdd1_26" BEL
+        "counterTestAdd1_27" BEL "counterTestAdd1_28" BEL "counterTestAdd1_29"
+        BEL "counterTestAdd1_30" BEL "counterTestAdd1_31" BEL
+        "counterTestAdd2_0" BEL "counterTestAdd2_1" BEL "counterTestAdd2_2"
+        BEL "counterTestAdd2_3" BEL "counterTestAdd2_4" BEL
+        "counterTestAdd2_5" BEL "counterTestAdd2_6" BEL "counterTestAdd2_7"
+        BEL "counterTestAdd2_8" BEL "counterTestAdd2_9" BEL
+        "counterTestAdd2_10" BEL "counterTestAdd2_11" BEL "counterTestAdd2_12"
+        BEL "counterTestAdd2_13" BEL "counterTestAdd2_14" BEL
+        "counterTestAdd2_15" BEL "counterTestAdd2_16" BEL "counterTestAdd2_17"
+        BEL "counterTestAdd2_18" BEL "counterTestAdd2_19" BEL
+        "counterTestAdd2_20" BEL "counterTestAdd2_21" BEL "counterTestAdd2_22"
+        BEL "counterTestAdd2_23" BEL "counterTestAdd2_24" BEL
+        "counterTestAdd2_25" BEL "counterTestAdd2_26" BEL "counterTestAdd2_27"
+        BEL "counterTestAdd2_28" BEL "counterTestAdd2_29" BEL
+        "counterTestAdd2_30" BEL "counterTestAdd2_31" BEL "keyCount_0" BEL
+        "keyCount_1" BEL "keyCount_2" BEL "keyCount_3" BEL "keyCount_4" BEL
+        "keyCount_5" BEL "keyCount_6" BEL "keyCount_7" BEL "keyCount_8" BEL
+        "keyCount_9" BEL "keyCount_10" BEL "counterTestAdd3_0" BEL
+        "counterTestAdd3_1" BEL "counterTestAdd3_2" BEL "counterTestAdd3_3"
+        BEL "counterTestAdd3_4" BEL "counterTestAdd3_5" BEL
+        "counterTestAdd3_6" BEL "counterTestAdd3_7" BEL "counterTestAdd3_8"
+        BEL "counterTestAdd3_9" BEL "counterTestAdd3_10" BEL
+        "counterTestAdd3_11" BEL "counterTestAdd3_12" BEL "counterTestAdd3_13"
+        BEL "counterTestAdd3_14" BEL "counterTestAdd3_15" BEL
+        "counterTestAdd3_16" BEL "counterTestAdd3_17" BEL "counterTestAdd3_18"
+        BEL "counterTestAdd3_19" BEL "counterTestAdd3_20" BEL
+        "counterTestAdd3_21" BEL "counterTestAdd3_22" BEL "counterTestAdd3_23"
+        BEL "counterTestAdd3_24" BEL "counterTestAdd3_25" BEL
+        "counterTestAdd3_26" BEL "counterTestAdd3_27" BEL "counterTestAdd3_28"
+        BEL "counterTestAdd3_29" BEL "counterTestAdd3_30" BEL
+        "counterTestAdd3_31" BEL "counterTestAdd4_0" BEL "counterTestAdd4_1"
+        BEL "counterTestAdd4_2" BEL "counterTestAdd4_3" BEL
+        "counterTestAdd4_4" BEL "counterTestAdd4_5" BEL "counterTestAdd4_6"
+        BEL "counterTestAdd4_7" BEL "counterTestAdd4_8" BEL
+        "counterTestAdd4_9" BEL "counterTestAdd4_10" BEL "counterTestAdd4_11"
+        BEL "counterTestAdd4_12" BEL "counterTestAdd4_13" BEL
+        "counterTestAdd4_14" BEL "counterTestAdd4_15" BEL "counterTestAdd4_16"
+        BEL "counterTestAdd4_17" BEL "counterTestAdd4_18" BEL
+        "counterTestAdd4_19" BEL "counterTestAdd4_20" BEL "counterTestAdd4_21"
+        BEL "counterTestAdd4_22" BEL "counterTestAdd4_23" BEL
+        "counterTestAdd4_24" BEL "counterTestAdd4_25" BEL "counterTestAdd4_26"
+        BEL "counterTestAdd4_27" BEL "counterTestAdd4_28" BEL
+        "counterTestAdd4_29" BEL "counterTestAdd4_30" BEL "counterTestAdd4_31"
+        BEL "binaryDATA2_0" BEL "binaryDATA2_1" BEL "binaryDATA2_2" BEL
+        "binaryDATA2_3" BEL "binaryDATA2_4" BEL "binaryDATA2_5" BEL
+        "binaryDATA2_6" BEL "binaryDATA2_7" BEL "binaryDATA2_8" BEL
+        "binaryDATA2_9" BEL "binaryDATA2_10" BEL "keyCountOld_0" BEL
+        "keyCountOld_1" BEL "keyCountOld_2" BEL "keyCountOld_3" BEL
+        "keyCountOld_4" BEL "keyCountOld_5" BEL "keyCountOld_6" BEL
+        "keyCountOld_7" BEL "keyCountOld_8" BEL "keyCountOld_9" BEL
+        "keyCountOld_10" BEL "counterTestAdd5_0" BEL "counterTestAdd5_1" BEL
+        "counterTestAdd5_2" BEL "counterTestAdd5_3" BEL "counterTestAdd5_4"
+        BEL "counterTestAdd5_5" BEL "counterTestAdd5_6" BEL
+        "counterTestAdd5_7" BEL "counterTestAdd5_8" BEL "counterTestAdd5_9"
+        BEL "counterTestAdd5_10" BEL "counterTestAdd5_11" BEL
+        "counterTestAdd5_12" BEL "counterTestAdd5_13" BEL "counterTestAdd5_14"
+        BEL "counterTestAdd5_15" BEL "counterTestAdd5_16" BEL
+        "counterTestAdd5_17" BEL "counterTestAdd5_18" BEL "counterTestAdd5_19"
+        BEL "counterTestAdd5_20" BEL "counterTestAdd5_21" BEL
+        "counterTestAdd5_22" BEL "counterTestAdd5_23" BEL "counterTestAdd5_24"
+        BEL "counterTestAdd5_25" BEL "counterTestAdd5_26" BEL
+        "counterTestAdd5_27" BEL "counterTestAdd5_28" BEL "counterTestAdd5_29"
+        BEL "counterTestAdd5_30" BEL "counterTestAdd5_31" BEL
+        "counterTestAdd6_0" BEL "counterTestAdd6_1" BEL "counterTestAdd6_2"
+        BEL "counterTestAdd6_3" BEL "counterTestAdd6_4" BEL
+        "counterTestAdd6_5" BEL "counterTestAdd6_6" BEL "counterTestAdd6_7"
+        BEL "counterTestAdd6_8" BEL "counterTestAdd6_9" BEL
+        "counterTestAdd6_10" BEL "counterTestAdd6_11" BEL "counterTestAdd6_12"
+        BEL "counterTestAdd6_13" BEL "counterTestAdd6_14" BEL
+        "counterTestAdd6_15" BEL "counterTestAdd6_16" BEL "counterTestAdd6_17"
+        BEL "counterTestAdd6_18" BEL "counterTestAdd6_19" BEL
+        "counterTestAdd6_20" BEL "counterTestAdd6_21" BEL "counterTestAdd6_22"
+        BEL "counterTestAdd6_23" BEL "counterTestAdd6_24" BEL
+        "counterTestAdd6_25" BEL "counterTestAdd6_26" BEL "counterTestAdd6_27"
+        BEL "counterTestAdd6_28" BEL "counterTestAdd6_29" BEL
+        "counterTestAdd6_30" BEL "counterTestAdd6_31" BEL "counterTestAdd7_0"
+        BEL "counterTestAdd7_1" BEL "counterTestAdd7_2" BEL
+        "counterTestAdd7_3" BEL "counterTestAdd7_4" BEL "counterTestAdd7_5"
+        BEL "counterTestAdd7_6" BEL "counterTestAdd7_7" BEL
+        "counterTestAdd7_8" BEL "counterTestAdd7_9" BEL "counterTestAdd7_10"
+        BEL "counterTestAdd7_11" BEL "counterTestAdd7_12" BEL
+        "counterTestAdd7_13" BEL "counterTestAdd7_14" BEL "counterTestAdd7_15"
+        BEL "counterTestAdd7_16" BEL "counterTestAdd7_17" BEL
+        "counterTestAdd7_18" BEL "counterTestAdd7_19" BEL "counterTestAdd7_20"
+        BEL "counterTestAdd7_21" BEL "counterTestAdd7_22" BEL
+        "counterTestAdd7_23" BEL "counterTestAdd7_24" BEL "counterTestAdd7_25"
+        BEL "counterTestAdd7_26" BEL "counterTestAdd7_27" BEL
+        "counterTestAdd7_28" BEL "counterTestAdd7_29" BEL "counterTestAdd7_30"
+        BEL "counterTestAdd7_31" BEL "counterTestAdd8_0" BEL
+        "counterTestAdd8_1" BEL "counterTestAdd8_2" BEL "counterTestAdd8_3"
+        BEL "counterTestAdd8_4" BEL "counterTestAdd8_5" BEL
+        "counterTestAdd8_6" BEL "counterTestAdd8_7" BEL "counterTestAdd8_8"
+        BEL "counterTestAdd8_9" BEL "counterTestAdd8_10" BEL
+        "counterTestAdd8_11" BEL "counterTestAdd8_12" BEL "counterTestAdd8_13"
+        BEL "counterTestAdd8_14" BEL "counterTestAdd8_15" BEL
+        "counterTestAdd8_16" BEL "counterTestAdd8_17" BEL "counterTestAdd8_18"
+        BEL "counterTestAdd8_19" BEL "counterTestAdd8_20" BEL
+        "counterTestAdd8_21" BEL "counterTestAdd8_22" BEL "counterTestAdd8_23"
+        BEL "counterTestAdd8_24" BEL "counterTestAdd8_25" BEL
+        "counterTestAdd8_26" BEL "counterTestAdd8_27" BEL "counterTestAdd8_28"
+        BEL "counterTestAdd8_29" BEL "counterTestAdd8_30" BEL
+        "counterTestAdd8_31" BEL "counterTestAdds_0" BEL "counterTestAdds_1"
+        BEL "counterTestAdds_2" BEL "counterTestAdds_3" BEL
+        "counterTestAdds_4" BEL "counterTestAdds_5" BEL "counterTestAdds_6"
+        BEL "counterTestAdds_7" BEL "counterTestAdds_8" BEL
+        "counterTestAdds_9" BEL "counterTestAdds_10" BEL "counterTestAdds_11"
+        BEL "counterTestAdds_12" BEL "counterTestAdds_13" BEL
+        "counterTestAdds_14" BEL "counterTestAdds_15" BEL "counterTestAdds_16"
+        BEL "counterTestAdds_17" BEL "counterTestAdds_18" BEL
+        "counterTestAdds_19" BEL "counterTestAdds_20" BEL "counterTestAdds_21"
+        BEL "counterTestAdds_22" BEL "counterTestAdds_23" BEL
+        "counterTestAdds_24" BEL "counterTestAdds_25" BEL "counterTestAdds_26"
+        BEL "counterTestAdds_27" BEL "counterTestAdds_28" BEL "counterTest3_0"
+        BEL "counterTest3_1" BEL "counterTest3_2" BEL "counterTest3_3" BEL
+        "counterTest3_4" BEL "counterTest3_5" BEL "counterTest3_6" BEL
+        "counterTest3_7" BEL "counterTest3_8" BEL "counterTest3_9" BEL
+        "counterTest3_10" BEL "counterTest3_11" BEL "counterTest3_12" BEL
+        "counterTest3_13" BEL "counterTest3_14" BEL "counterTest3_15" BEL
+        "counterTest3_16" BEL "counterTest3_17" BEL "counterTest3_18" PIN
+        "Mmult_n0355_pins<110>" BEL "counterSoftStop_1" BEL
+        "counterSoftStop_0" BEL "counterSoftStop_4" BEL "counterSoftStop_2"
+        BEL "counterSoftStop_3" BEL "counterSoftStop_7" BEL
+        "counterSoftStop_5" BEL "counterSoftStop_6" BEL "counterSoftStop_10"
+        BEL "counterSoftStop_8" BEL "counterSoftStop_9" BEL
+        "counterSoftStop_13" BEL "counterSoftStop_11" BEL "counterSoftStop_12"
+        BEL "counterSoftStop_16" BEL "counterSoftStop_14" BEL
+        "counterSoftStop_15" BEL "counterSoftStop_17" BEL "counterSoftStop_18"
+        BEL "counterTest2_0" BEL "counterTest2_3" BEL "counterTest2_1" BEL
+        "counterTest2_2" BEL "counterTest2_6" BEL "counterTest2_4" BEL
+        "counterTest2_5" BEL "counterTest2_9" BEL "counterTest2_7" BEL
+        "counterTest2_8" BEL "counterTest2_12" BEL "counterTest2_10" BEL
+        "counterTest2_11" BEL "counterTest2_13" BEL "counterTest2_14" BEL
+        "counterTest2_15" BEL "counterTest2_16" BEL "counterTest2_17" BEL
+        "counterTest2_18" BEL "counterAnilox_1" BEL "counterAnilox_4" BEL
+        "counterAnilox_2" BEL "counterAnilox_3" BEL "counterAnilox_5" BEL
+        "counterAnilox_6" BEL "counterAnilox_7" BEL "counterAnilox_8" BEL
+        "counterAnilox_9" BEL "fl_invert" BEL "counterTest1_1" BEL
+        "counterTest1_4" BEL "counterTest1_2" BEL "counterTest1_3" BEL
+        "counterTest1_7" BEL "counterTest1_5" BEL "counterTest1_6" BEL
+        "counterTest1_10" BEL "counterTest1_8" BEL "counterTest1_9" BEL
+        "counterTest1_13" BEL "counterTest1_11" BEL "counterTest1_12" BEL
+        "counterTest1_16" BEL "counterTest1_14" BEL "counterTest1_15" BEL
+        "counterTest1_19" BEL "counterTest1_17" BEL "counterTest1_18" BEL
+        "counterTest1_20" BEL "counterTest1_21" BEL "counterTest1_22" BEL
+        "counterTest1_23" BEL "counterTest1_26" BEL "counterTest1_24" BEL
+        "counterTest1_25" BEL "counterTest1_29" BEL "counterTest1_27" BEL
+        "counterTest1_28" BEL "fl_count1_FSM_FFd1" BEL "counterTest1_30" BEL
+        "counterTest1_31" BEL "fl_sum_FSM_FFd10" BEL "fl_invert2" BEL
+        "fl_sum_FSM_FFd7" BEL "fl_sum_FSM_FFd9" BEL "fl_sum_FSM_FFd8" BEL
+        "fl_sum_FSM_FFd4" BEL "fl_sum_FSM_FFd6" BEL "fl_sum_FSM_FFd5" BEL
+        "fl_sum_FSM_FFd1" BEL "fl_sum_FSM_FFd3" BEL "fl_sum_FSM_FFd2" BEL
+        "counterAnilox_0" BEL "counterTest1_0" BEL
+        "u_system_ctrl/u_sdram_pll/clkout6_buf" BEL "fl_soft_stop2" BEL
+        "red_led_1r" BEL "green_led_3r" BEL "fl_startstop" BEL "fl_new_cnt"
+        BEL "green_led_2r" BEL "red_led_2r" BEL "fl_new_cnt2" BEL
+        "j3red_led_1r_1";
+TIMEGRP u_system_ctrl_u_sdram_pll_clkout1 = BEL "u_system_ctrl/delay_done" BEL
+        "u_system_ctrl/delay_cnt_0" BEL "u_system_ctrl/delay_cnt_1" BEL
+        "u_system_ctrl/delay_cnt_2" BEL "u_system_ctrl/delay_cnt_3" BEL
+        "u_system_ctrl/delay_cnt_4" BEL "u_system_ctrl/delay_cnt_5" BEL
+        "u_system_ctrl/delay_cnt_6" BEL "u_system_ctrl/delay_cnt_7" BEL
+        "u_system_ctrl/delay_cnt_8" BEL "u_system_ctrl/delay_cnt_9" BEL
+        "u_system_ctrl/u_sdram_pll/clkout2_buf";
+TIMEGRP u_system_ctrl_u_sdram_pll_clkout4 = BEL
+        "u_system_ctrl/u_sdram_pll/clkout5_buf" BEL "u4/U2/U1/C1_15" BEL
+        "u4/U2/U1/C1_14" BEL "u4/U2/U1/C1_13" BEL "u4/U2/U1/C1_12" BEL
+        "u4/U2/U1/C1_11" BEL "u4/U2/U1/C1_10" BEL "u4/U2/U1/C1_9" BEL
+        "u4/U2/U1/C1_8" BEL "u4/U2/U1/C1_7" BEL "u4/U2/U1/C1_6" BEL
+        "u4/U2/U1/C1_5" BEL "u4/U2/U1/C1_4" BEL "u4/U2/U1/C1_3" BEL
+        "u4/U2/U1/C1_2" BEL "u4/U2/U1/C1_1" BEL "u4/U2/U1/C1_0" BEL
+        "u4/U2/U1/rNumber_3" BEL "u4/U2/U1/rNumber_2" BEL "u4/U2/U1/rNumber_1"
+        BEL "u4/U2/U1/rNumber_0" BEL "u4/U2/U1/i_2" BEL "u4/U2/U1/i_1" BEL
+        "u4/U2/U1/i_0" BEL "u4/U2/U2/rSMG_6" BEL "u4/U2/U2/rSMG_5" BEL
+        "u4/U2/U2/rSMG_4" BEL "u4/U2/U2/rSMG_3" BEL "u4/U2/U2/rSMG_2" BEL
+        "u4/U2/U2/rSMG_1" BEL "u4/U2/U2/rSMG_0" BEL "u4/U2/U3/C1_15" BEL
+        "u4/U2/U3/C1_14" BEL "u4/U2/U3/C1_13" BEL "u4/U2/U3/C1_12" BEL
+        "u4/U2/U3/C1_11" BEL "u4/U2/U3/C1_10" BEL "u4/U2/U3/C1_9" BEL
+        "u4/U2/U3/C1_8" BEL "u4/U2/U3/C1_7" BEL "u4/U2/U3/C1_6" BEL
+        "u4/U2/U3/C1_5" BEL "u4/U2/U3/C1_4" BEL "u4/U2/U3/C1_3" BEL
+        "u4/U2/U3/C1_2" BEL "u4/U2/U3/C1_1" BEL "u4/U2/U3/C1_0" BEL
+        "u4/U2/U3/rScan_5" BEL "u4/U2/U3/rScan_4" BEL "u4/U2/U3/rScan_3" BEL
+        "u4/U2/U3/rScan_2" BEL "u4/U2/U3/rScan_1" BEL "u4/U2/U3/rScan_0" BEL
+        "u4/U2/U3/i_2" BEL "u4/U2/U3/i_1" BEL "u4/U2/U3/i_0";
+TIMEGRP u_system_ctrl_u_sdram_pll_clkout0 = BEL
+        "u_system_ctrl/u_sdram_pll/clkout1_buf" BEL
+        "power_on_delay_inst/cnt3_19" BEL "power_on_delay_inst/cnt3_18" BEL
+        "power_on_delay_inst/cnt3_17" BEL "power_on_delay_inst/cnt3_16" BEL
+        "power_on_delay_inst/cnt3_15" BEL "power_on_delay_inst/cnt3_14" BEL
+        "power_on_delay_inst/cnt3_13" BEL "power_on_delay_inst/cnt3_12" BEL
+        "power_on_delay_inst/cnt3_11" BEL "power_on_delay_inst/cnt3_10" BEL
+        "power_on_delay_inst/cnt3_9" BEL "power_on_delay_inst/cnt3_8" BEL
+        "power_on_delay_inst/cnt3_7" BEL "power_on_delay_inst/cnt3_6" BEL
+        "power_on_delay_inst/cnt3_5" BEL "power_on_delay_inst/cnt3_4" BEL
+        "power_on_delay_inst/cnt3_3" BEL "power_on_delay_inst/cnt3_2" BEL
+        "power_on_delay_inst/cnt3_1" BEL "power_on_delay_inst/cnt3_0" BEL
+        "power_on_delay_inst/cnt2_15" BEL "power_on_delay_inst/cnt2_14" BEL
+        "power_on_delay_inst/cnt2_13" BEL "power_on_delay_inst/cnt2_12" BEL
+        "power_on_delay_inst/cnt2_11" BEL "power_on_delay_inst/cnt2_10" BEL
+        "power_on_delay_inst/cnt2_9" BEL "power_on_delay_inst/cnt2_8" BEL
+        "power_on_delay_inst/cnt2_7" BEL "power_on_delay_inst/cnt2_6" BEL
+        "power_on_delay_inst/cnt2_5" BEL "power_on_delay_inst/cnt2_4" BEL
+        "power_on_delay_inst/cnt2_3" BEL "power_on_delay_inst/cnt2_2" BEL
+        "power_on_delay_inst/cnt2_1" BEL "power_on_delay_inst/cnt2_0" BEL
+        "power_on_delay_inst/initial_en" BEL
+        "power_on_delay_inst/camera_rstn_reg" BEL
+        "power_on_delay_inst/camera_pwnd_reg";
+PIN SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0_pins<0> = BEL
+        "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0" PINNAME DIVCLK;
+PIN u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV_pins<2> = BEL
+        "u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV" PINNAME CLKIN1;
+TIMEGRP sys_clk_pin = PIN "SP6_BUFIO2_INSERT_PLL1_ML_BUFIO2_0_pins<0>" PIN
+        "u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV_pins<2>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+TS_u_system_ctrl_u_sdram_pll_clkout1 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkout1" TS_sys_clk_pin * 2.5 HIGH 50%;
+TS_u_system_ctrl_u_sdram_pll_clkout5 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkout5" TS_sys_clk_pin * 0.239726027 HIGH
+        50%;
+TS_u_system_ctrl_u_sdram_pll_clkout0 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkout0" TS_sys_clk_pin * 0.460526316 HIGH
+        50%;
+TS_u_system_ctrl_u_sdram_pll_clkout4 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkout4" TS_sys_clk_pin * 0.972222222 HIGH
+        50%;
+SCHEMATIC END;
+

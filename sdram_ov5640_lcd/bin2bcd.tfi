@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+bin2bcd instance_name (
+    .A(A), 
+    .ONES(ONES), 
+    .TENS(TENS)
+    );
+
+

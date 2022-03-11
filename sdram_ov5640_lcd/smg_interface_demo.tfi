@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+smg_interface_demo instance_name (
+    .CLK(CLK), 
+    .RSTn(RSTn), 
+    .SMG_Data(SMG_Data), 
+    .Scan_Sig(Scan_Sig), 
+    .binaryDATA(binaryDATA)
+    );
+
+

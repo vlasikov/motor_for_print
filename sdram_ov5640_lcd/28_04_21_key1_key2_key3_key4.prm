@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd//28_04_21_key1_key2_key3_key4 -s 4096 -u 0000 C:/arbeit/bon/bnXilinx/AX309/tmp/smg01/sdram_ov5640_lcd/sdram_ov5640_lcd.bit -spi 
+
+PROM C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\28_04_21_key1_key2_key3_key4.prm map: Wed Apr 28 16:26:50 2021
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          4096K
+PROM start    0000:0000
+PROM end      003f:ffff
+PROM checksum 3aceeadc
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Apr 28 16:22:45 2021 C:/arbeit/bon/bnXilinx/AX309/tmp/smg01/sdram_ov5640_lcd/sdram_ov5640_lcd.bit

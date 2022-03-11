@@ -1,0 +1,26 @@
+
+
+
+// Instantiate the module
+vga_test instance_name (
+    .vga_clk(vga_clk), 
+    .vga_hs(vga_hs), 
+    .vga_vs(vga_vs), 
+    .vga_r(vga_r), 
+    .vga_g(vga_g), 
+    .vga_b(vga_b), 
+    .key3(key3), 
+    .CMOS_VSYNC(CMOS_VSYNC), 
+    .CMOS_HREF(CMOS_HREF), 
+    .CMOS_PCLK(CMOS_PCLK), 
+    .CMOS_XCLK(CMOS_XCLK), 
+    .CMOS_DB(CMOS_DB), 
+    .cmos_rst_n(cmos_rst_n), 
+    .vga_CMOS_XCLK(vga_CMOS_XCLK), 
+    .vga_CMOS_PCLK(vga_CMOS_PCLK), 
+    .vga_CMOS_HREF(vga_CMOS_HREF), 
+    .vga_CMOS_VSYNC(vga_CMOS_VSYNC), 
+    .vga_CMOS_DB03(vga_CMOS_DB03)
+    );
+
+

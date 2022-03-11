@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\PC\Desktop\Xilinx\sdram_ov5640_lcd\impact.xsl
+OUTFILE=C:\Users\PC\Desktop\Xilinx\sdram_ov5640_lcd\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\PC\Desktop\Xilinx\sdram_ov5640_lcd
+LICENSE=iMPACT
+USER_INFO=iMPACT

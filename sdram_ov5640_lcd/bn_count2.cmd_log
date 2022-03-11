@@ -1,0 +1,1 @@
+sch2verilog -intstyle ise -family spartan6 -tionly {} -tiext tfi -w C:/arbeit/bon/bnXilinx/AX309/25_sdram_ov5640_lcd/sdram_ov5640_lcd/bn_count2.sch bn_count2.tfi 

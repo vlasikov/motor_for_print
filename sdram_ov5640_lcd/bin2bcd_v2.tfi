@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+bin2bcd_v2 instance_name (
+    .binary(binary), 
+    .sgZ0(sgZ0), 
+    .sgZ1(sgZ1), 
+    .sgZ2(sgZ2)
+    );
+
+

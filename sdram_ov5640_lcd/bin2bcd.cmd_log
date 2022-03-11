@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj sdram_ov5640_lcd -o C:/arbeit/bon/bnXilinx/AX309/25_sdram_ov5640_lcd/sdram_ov5640_lcd/bin2bcd.tfi -lib work C:/arbeit/bon/bnXilinx/AX309/25_sdram_ov5640_lcd/sdram_ov5640_lcd//bin2bcd.v -module bin2bcd -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

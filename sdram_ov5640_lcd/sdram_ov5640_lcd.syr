@@ -1,0 +1,1441 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: sdram_ov5640_lcd.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sdram_ov5640_lcd.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sdram_ov5640_lcd"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : sdram_ov5640_lcd
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\ipcore_dir\sdram_pll.v" into library work
+Parsing module <sdram_pll>.
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\smg\smg_scan_module.v" into library work
+Parsing module <smg_scan_module>.
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\smg\smg_encode_module.v" into library work
+Parsing module <smg_encode_module>.
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\smg\smg_control_module.v" into library work
+Parsing module <smg_control_module>.
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\smg\smg_interface.v" into library work
+Parsing module <smg_interface>.
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\bin2bcd_v2.v" into library work
+Parsing module <bin2bcd_v2>.
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\system_ctrl.v" into library work
+Parsing module <system_ctrl>.
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\smg\smg_interface_demo.v" into library work
+Parsing module <smg_interface_demo>.
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\power_on_delay.v" into library work
+Parsing module <power_on_delay>.
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" into library work
+Parsing module <sdram_ov5640_lcd>.
+Analyzing Verilog file "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\bn_count2.vf" into library work
+Parsing module <CB2CE_HXILINX_bn_count2>.
+Parsing module <bn_count2>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <sdram_ov5640_lcd>.
+
+Elaborating module <system_ctrl>.
+
+Elaborating module <sdram_pll>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <PLL_BASE(BANDWIDTH="OPTIMIZED",CLK_FEEDBACK="CLKFBOUT",COMPENSATION="SYSTEM_SYNCHRONOUS",DIVCLK_DIVIDE=2,CLKFBOUT_MULT=35,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=38,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DIVIDE=7,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT2_DIVIDE=7,CLKOUT2_PHASE=0.0,CLKOUT2_DUTY_CYCLE=0.5,CLKOUT3_DIVIDE=9,CLKOUT3_PHASE=0.0,CLKOUT3_DUTY_CYCLE=0.5,CLKOUT4_DIVIDE=18,CLKOUT4_PHASE=0.0,CLKOUT4_DUTY_CYCLE=0.5,CLKOUT5_DIVIDE=73,CLKOUT5_PHASE=0.0,CLKOUT5_DUTY_CYCLE=0.5,CLKIN_PERIOD=20.0,REF_JITTER=0.01)>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <ODDR2(DDR_ALIGNMENT="NONE",INIT=1'b0,SRTYPE="SYNC")>.
+WARNING:HDLCompiler:1127 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 104: Assignment to clk_ref ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 105: Assignment to clk_refout ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 106: Assignment to clk_vga ignored, since the identifier is never used
+
+Elaborating module <power_on_delay>.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 451: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 500: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 509: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 515: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 524: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 530: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 539: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 545: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 554: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 560: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:1127 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 192: Assignment to regFiltr ignored, since the identifier is never used
+
+Elaborating module <smg_interface_demo>.
+
+Elaborating module <bin2bcd_v2>.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\bin2bcd_v2.v" Line 47: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\bin2bcd_v2.v" Line 46: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\bin2bcd_v2.v" Line 45: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\bin2bcd_v2.v" Line 44: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\bin2bcd_v2.v" Line 43: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\bin2bcd_v2.v" Line 42: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <smg_interface>.
+
+Elaborating module <smg_control_module>.
+
+Elaborating module <smg_encode_module>.
+
+Elaborating module <smg_scan_module>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sdram_ov5640_lcd>.
+    Related source file is "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v".
+WARNING:Xst:647 - Input <j3sensor2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 97: Output port <clk_c1> of the instance <u_system_ctrl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 97: Output port <clk_c2> of the instance <u_system_ctrl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 97: Output port <clk_c3> of the instance <u_system_ctrl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 113: Output port <camera_rstn> of the instance <power_on_delay_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 113: Output port <camera_pwnd> of the instance <power_on_delay_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 113: Output port <cmos_reset_bar> of the instance <power_on_delay_inst> is unconnected or connected to loadless signal.
+    Register <fl_anilox_stop> equivalent to <j3red_led_1r> has been removed
+    Found 1-bit register for signal <frame>.
+    Found 1-bit register for signal <flash>.
+    Found 1-bit register for signal <red_led_1>.
+    Found 1-bit register for signal <red_led_2>.
+    Found 1-bit register for signal <green_led_1>.
+    Found 1-bit register for signal <green_led_2>.
+    Found 1-bit register for signal <green_led_3>.
+    Found 1-bit register for signal <j3red_led_1>.
+    Found 1-bit register for signal <j3red_led_2>.
+    Found 1-bit register for signal <j3green_led_1>.
+    Found 1-bit register for signal <j3green_led_2>.
+    Found 1-bit register for signal <j3green_led_3>.
+    Found 1-bit register for signal <fl_startstop>.
+    Found 1-bit register for signal <fl_soft_stop>.
+    Found 1-bit register for signal <fl_soft_stop2>.
+    Found 16-bit register for signal <keyCount>.
+    Found 16-bit register for signal <keyCountOld>.
+    Found 1-bit register for signal <fl_key1>.
+    Found 1-bit register for signal <fl_key2>.
+    Found 1-bit register for signal <fl_key3>.
+    Found 1-bit register for signal <fl_key4>.
+    Found 32-bit register for signal <counterTest1>.
+    Found 32-bit register for signal <counterTest2>.
+    Found 32-bit register for signal <counterTest3>.
+    Found 32-bit register for signal <counterTestAdd1>.
+    Found 32-bit register for signal <counterTestAdd2>.
+    Found 32-bit register for signal <counterTestAdd3>.
+    Found 32-bit register for signal <counterTestAdd4>.
+    Found 32-bit register for signal <counterTestAdd5>.
+    Found 32-bit register for signal <counterTestAdd6>.
+    Found 32-bit register for signal <counterTestAdd7>.
+    Found 32-bit register for signal <counterTestAdd8>.
+    Found 32-bit register for signal <counterTestAdds>.
+    Found 32-bit register for signal <counterAnilox>.
+    Found 32-bit register for signal <counterSoftStop>.
+    Found 8-bit register for signal <fl_sum>.
+    Found 4-bit register for signal <fl_count1>.
+    Found 4-bit register for signal <fl_count2>.
+    Found 1-bit register for signal <fl_new_cnt>.
+    Found 1-bit register for signal <fl_new_cnt2>.
+    Found 1-bit register for signal <fl_invert>.
+    Found 1-bit register for signal <fl_invert2>.
+    Found 16-bit register for signal <key1pushCount>.
+    Found 16-bit register for signal <key2pushCount>.
+    Found 16-bit register for signal <key3pushCount>.
+    Found 16-bit register for signal <key4pushCount>.
+    Found 24-bit register for signal <binaryDATA2>.
+    Found finite state machine <FSM_1> for signal <fl_count1>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 1                                              |
+    | Clock              | bn_test_clk (rising_edge)                      |
+    | Reset              | GND_1_o_GND_1_o_equal_2_o (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_0> for signal <fl_sum>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 66                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 13                                             |
+    | Clock              | bn_test_clk (rising_edge)                      |
+    | Reset              | GND_1_o_GND_1_o_equal_2_o (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000000                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <n0490> created at line 341.
+    Found 32-bit adder for signal <n0493> created at line 341.
+    Found 32-bit adder for signal <n0496> created at line 341.
+    Found 32-bit adder for signal <n0499> created at line 341.
+    Found 32-bit adder for signal <n0502> created at line 341.
+    Found 32-bit adder for signal <n0505> created at line 341.
+    Found 32-bit adder for signal <n0351> created at line 341.
+    Found 32-bit adder for signal <counterSoftStop[31]_GND_1_o_add_67_OUT> created at line 417.
+    Found 32-bit adder for signal <counterTest1[31]_GND_1_o_add_72_OUT> created at line 426.
+    Found 32-bit adder for signal <counterAnilox[31]_GND_1_o_add_77_OUT> created at line 447.
+    Found 1-bit adder for signal <fl_invert2_PWR_1_o_add_78_OUT<0>> created at line 451.
+    Found 32-bit adder for signal <counterTest2[31]_GND_1_o_add_84_OUT> created at line 478.
+    Found 1-bit adder for signal <fl_invert_PWR_1_o_add_85_OUT<0>> created at line 500.
+    Found 16-bit adder for signal <key1pushCount[15]_GND_1_o_add_99_OUT> created at line 515.
+    Found 16-bit adder for signal <key2pushCount[15]_GND_1_o_add_113_OUT> created at line 530.
+    Found 16-bit adder for signal <keyCount[15]_GND_1_o_add_119_OUT> created at line 539.
+    Found 16-bit adder for signal <key3pushCount[15]_GND_1_o_add_127_OUT> created at line 545.
+    Found 16-bit adder for signal <keyCount[15]_GND_1_o_add_133_OUT> created at line 554.
+    Found 16-bit adder for signal <key4pushCount[15]_GND_1_o_add_141_OUT> created at line 560.
+    Found 16-bit subtractor for signal <GND_1_o_GND_1_o_sub_92_OUT<15:0>> created at line 509.
+    Found 16-bit subtractor for signal <GND_1_o_GND_1_o_sub_106_OUT<15:0>> created at line 524.
+    Found 32x16-bit multiplier for signal <n0355> created at line 363.
+    Found 32-bit comparator greater for signal <counterSoftStop[31]_GND_1_o_LessThan_67_o> created at line 416
+    Found 32-bit comparator greater for signal <GND_1_o_counterTest1[31]_LessThan_75_o> created at line 432
+    Found 32-bit comparator greater for signal <counterAnilox[31]_GND_1_o_LessThan_77_o> created at line 446
+    Found 32-bit comparator greater for signal <counterTest2[31]_counterTest3[31]_LessThan_84_o> created at line 477
+    Found 16-bit comparator greater for signal <GND_1_o_keyCount[15]_LessThan_91_o> created at line 508
+    Found 16-bit comparator greater for signal <key1pushCount[15]_GND_1_o_LessThan_99_o> created at line 515
+    Found 16-bit comparator greater for signal <key2pushCount[15]_GND_1_o_LessThan_113_o> created at line 530
+    Found 16-bit comparator greater for signal <keyCount[15]_GND_1_o_LessThan_119_o> created at line 538
+    Found 16-bit comparator greater for signal <key3pushCount[15]_GND_1_o_LessThan_127_o> created at line 545
+    Found 16-bit comparator greater for signal <key4pushCount[15]_GND_1_o_LessThan_141_o> created at line 560
+    Found 16-bit comparator equal for signal <n0204> created at line 564
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred  21 Adder/Subtractor(s).
+	inferred 595 D-type flip-flop(s).
+	inferred  11 Comparator(s).
+	inferred  27 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <sdram_ov5640_lcd> synthesized.
+
+Synthesizing Unit <system_ctrl>.
+    Related source file is "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\system_ctrl.v".
+INFO:Xst:3210 - "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\system_ctrl.v" line 47: Output port <LOCKED> of the instance <u_sdram_pll> is unconnected or connected to loadless signal.
+    Found 10-bit register for signal <delay_cnt>.
+    Found 1-bit register for signal <delay_done>.
+    Found 10-bit adder for signal <delay_cnt[9]_GND_2_o_add_1_OUT> created at line 37.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <system_ctrl> synthesized.
+
+Synthesizing Unit <sdram_pll>.
+    Related source file is "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\ipcore_dir\sdram_pll.v".
+    Summary:
+	no macro.
+Unit <sdram_pll> synthesized.
+
+Synthesizing Unit <power_on_delay>.
+    Related source file is "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\power_on_delay.v".
+    Register <rg_cmos_reset_bar> equivalent to <camera_rstn_reg> has been removed
+    Found 1-bit register for signal <camera_pwnd_reg>.
+    Found 16-bit register for signal <cnt2>.
+    Found 1-bit register for signal <camera_rstn_reg>.
+    Found 20-bit register for signal <cnt3>.
+    Found 1-bit register for signal <initial_en>.
+    Found 16-bit adder for signal <cnt2[15]_GND_8_o_add_7_OUT> created at line 45.
+    Found 20-bit adder for signal <cnt3[19]_GND_8_o_add_14_OUT> created at line 63.
+    Found 16-bit comparator greater for signal <cnt2[15]_PWR_8_o_LessThan_7_o> created at line 44
+    Found 20-bit comparator greater for signal <cnt3[19]_PWR_8_o_LessThan_14_o> created at line 62
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  39 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <power_on_delay> synthesized.
+
+Synthesizing Unit <div_32u_14u>.
+    Related source file is "".
+    Found 46-bit adder for signal <GND_10_o_b[13]_add_1_OUT> created at line 0.
+    Found 45-bit adder for signal <GND_10_o_b[13]_add_3_OUT> created at line 0.
+    Found 44-bit adder for signal <GND_10_o_b[13]_add_5_OUT> created at line 0.
+    Found 43-bit adder for signal <GND_10_o_b[13]_add_7_OUT> created at line 0.
+    Found 42-bit adder for signal <GND_10_o_b[13]_add_9_OUT> created at line 0.
+    Found 41-bit adder for signal <GND_10_o_b[13]_add_11_OUT> created at line 0.
+    Found 40-bit adder for signal <GND_10_o_b[13]_add_13_OUT> created at line 0.
+    Found 39-bit adder for signal <GND_10_o_b[13]_add_15_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_10_o_b[13]_add_17_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_10_o_b[13]_add_19_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_10_o_b[13]_add_21_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_10_o_b[13]_add_23_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_10_o_b[13]_add_25_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_10_o_b[13]_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[13]_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_59_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_61_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_63_OUT[31:0]> created at line 0.
+    Found 46-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 45-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 44-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 43-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 42-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 41-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  32 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 931 Multiplexer(s).
+Unit <div_32u_14u> synthesized.
+
+Synthesizing Unit <smg_interface_demo>.
+    Related source file is "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\smg\smg_interface_demo.v".
+    Summary:
+	no macro.
+Unit <smg_interface_demo> synthesized.
+
+Synthesizing Unit <bin2bcd_v2>.
+    Related source file is "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\bin2bcd_v2.v".
+    Found 4-bit adder for signal <n0489> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_4_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_7_OUT> created at line 47.
+    Found 4-bit adder for signal <n0499> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_13_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_16_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_19_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_22_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_25_OUT> created at line 47.
+    Found 4-bit adder for signal <n0518> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_31_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_34_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_37_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_40_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_43_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_46_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_49_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_52_OUT> created at line 47.
+    Found 4-bit adder for signal <n0546> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_58_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_61_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_64_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_67_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_70_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_73_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_76_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_79_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_82_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_85_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_88_OUT> created at line 47.
+    Found 4-bit adder for signal <n0583> created at line 43.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_94_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_97_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_100_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_103_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_106_OUT> created at line 43.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_109_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_112_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_115_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_118_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_121_OUT> created at line 43.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_124_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_127_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_130_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_133_OUT> created at line 47.
+    Found 4-bit adder for signal <n0629> created at line 42.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_139_OUT> created at line 43.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_142_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_145_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_148_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_151_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_154_OUT> created at line 42.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_157_OUT> created at line 43.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_160_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_163_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_166_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_169_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_172_OUT> created at line 42.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_175_OUT> created at line 43.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_178_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_181_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_184_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_187_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_190_OUT> created at line 42.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_193_OUT> created at line 43.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_196_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_199_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_202_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_205_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_208_OUT> created at line 42.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_211_OUT> created at line 43.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_214_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_217_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_220_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_223_OUT> created at line 47.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_226_OUT> created at line 42.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_229_OUT> created at line 43.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_232_OUT> created at line 44.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_235_OUT> created at line 45.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_238_OUT> created at line 46.
+    Found 4-bit adder for signal <GND_12_o_GND_12_o_add_241_OUT> created at line 47.
+    Found 3-bit comparator lessequal for signal <n0000> created at line 47
+    Found 4-bit comparator lessequal for signal <n0004> created at line 47
+    Found 4-bit comparator lessequal for signal <n0008> created at line 47
+    Found 3-bit comparator lessequal for signal <n0012> created at line 46
+    Found 4-bit comparator lessequal for signal <n0016> created at line 47
+    Found 4-bit comparator lessequal for signal <n0020> created at line 46
+    Found 4-bit comparator lessequal for signal <n0024> created at line 47
+    Found 4-bit comparator lessequal for signal <n0028> created at line 46
+    Found 4-bit comparator lessequal for signal <n0032> created at line 47
+    Found 3-bit comparator lessequal for signal <n0036> created at line 45
+    Found 4-bit comparator lessequal for signal <n0040> created at line 46
+    Found 4-bit comparator lessequal for signal <n0044> created at line 47
+    Found 4-bit comparator lessequal for signal <n0048> created at line 45
+    Found 4-bit comparator lessequal for signal <n0052> created at line 46
+    Found 4-bit comparator lessequal for signal <n0056> created at line 47
+    Found 4-bit comparator lessequal for signal <n0060> created at line 45
+    Found 4-bit comparator lessequal for signal <n0064> created at line 46
+    Found 4-bit comparator lessequal for signal <n0068> created at line 47
+    Found 3-bit comparator lessequal for signal <n0072> created at line 44
+    Found 4-bit comparator lessequal for signal <n0076> created at line 45
+    Found 4-bit comparator lessequal for signal <n0080> created at line 46
+    Found 4-bit comparator lessequal for signal <n0084> created at line 47
+    Found 4-bit comparator lessequal for signal <n0088> created at line 44
+    Found 4-bit comparator lessequal for signal <n0092> created at line 45
+    Found 4-bit comparator lessequal for signal <n0096> created at line 46
+    Found 4-bit comparator lessequal for signal <n0100> created at line 47
+    Found 4-bit comparator lessequal for signal <n0104> created at line 44
+    Found 4-bit comparator lessequal for signal <n0108> created at line 45
+    Found 4-bit comparator lessequal for signal <n0112> created at line 46
+    Found 4-bit comparator lessequal for signal <n0116> created at line 47
+    Found 3-bit comparator lessequal for signal <n0120> created at line 43
+    Found 4-bit comparator lessequal for signal <n0124> created at line 44
+    Found 4-bit comparator lessequal for signal <n0128> created at line 45
+    Found 4-bit comparator lessequal for signal <n0132> created at line 46
+    Found 4-bit comparator lessequal for signal <n0136> created at line 47
+    Found 4-bit comparator lessequal for signal <n0140> created at line 43
+    Found 4-bit comparator lessequal for signal <n0144> created at line 44
+    Found 4-bit comparator lessequal for signal <n0148> created at line 45
+    Found 4-bit comparator lessequal for signal <n0152> created at line 46
+    Found 4-bit comparator lessequal for signal <n0156> created at line 47
+    Found 4-bit comparator lessequal for signal <n0160> created at line 43
+    Found 4-bit comparator lessequal for signal <n0164> created at line 44
+    Found 4-bit comparator lessequal for signal <n0168> created at line 45
+    Found 4-bit comparator lessequal for signal <n0172> created at line 46
+    Found 4-bit comparator lessequal for signal <n0176> created at line 47
+    Found 3-bit comparator lessequal for signal <n0180> created at line 42
+    Found 4-bit comparator lessequal for signal <n0184> created at line 43
+    Found 4-bit comparator lessequal for signal <n0188> created at line 44
+    Found 4-bit comparator lessequal for signal <n0192> created at line 45
+    Found 4-bit comparator lessequal for signal <n0196> created at line 46
+    Found 4-bit comparator lessequal for signal <n0200> created at line 47
+    Found 4-bit comparator lessequal for signal <n0204> created at line 42
+    Found 4-bit comparator lessequal for signal <n0208> created at line 43
+    Found 4-bit comparator lessequal for signal <n0212> created at line 44
+    Found 4-bit comparator lessequal for signal <n0216> created at line 45
+    Found 4-bit comparator lessequal for signal <n0220> created at line 46
+    Found 4-bit comparator lessequal for signal <n0224> created at line 47
+    Found 4-bit comparator lessequal for signal <n0228> created at line 42
+    Found 4-bit comparator lessequal for signal <n0232> created at line 43
+    Found 4-bit comparator lessequal for signal <n0236> created at line 44
+    Found 4-bit comparator lessequal for signal <n0240> created at line 45
+    Found 4-bit comparator lessequal for signal <n0244> created at line 46
+    Found 4-bit comparator lessequal for signal <n0248> created at line 47
+    Found 4-bit comparator lessequal for signal <n0252> created at line 42
+    Found 4-bit comparator lessequal for signal <n0256> created at line 43
+    Found 4-bit comparator lessequal for signal <n0260> created at line 44
+    Found 4-bit comparator lessequal for signal <n0264> created at line 45
+    Found 4-bit comparator lessequal for signal <n0268> created at line 46
+    Found 4-bit comparator lessequal for signal <n0272> created at line 47
+    Found 4-bit comparator lessequal for signal <n0276> created at line 42
+    Found 4-bit comparator lessequal for signal <n0280> created at line 43
+    Found 4-bit comparator lessequal for signal <n0284> created at line 44
+    Found 4-bit comparator lessequal for signal <n0288> created at line 45
+    Found 4-bit comparator lessequal for signal <n0292> created at line 46
+    Found 4-bit comparator lessequal for signal <n0296> created at line 47
+    Found 4-bit comparator lessequal for signal <n0300> created at line 42
+    Found 4-bit comparator lessequal for signal <n0304> created at line 43
+    Found 4-bit comparator lessequal for signal <n0308> created at line 44
+    Found 4-bit comparator lessequal for signal <n0312> created at line 45
+    Found 4-bit comparator lessequal for signal <n0316> created at line 46
+    Found 4-bit comparator lessequal for signal <n0320> created at line 47
+    Summary:
+	inferred  81 Adder/Subtractor(s).
+	inferred  81 Comparator(s).
+	inferred  81 Multiplexer(s).
+Unit <bin2bcd_v2> synthesized.
+
+Synthesizing Unit <smg_interface>.
+    Related source file is "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\smg\smg_interface.v".
+    Summary:
+	no macro.
+Unit <smg_interface> synthesized.
+
+Synthesizing Unit <smg_control_module>.
+    Related source file is "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\smg\smg_control_module.v".
+        T1MS = 16'b1100001101001111
+    Found 4-bit register for signal <i>.
+    Found 4-bit register for signal <rNumber>.
+    Found 16-bit register for signal <C1>.
+    Found 16-bit adder for signal <C1[15]_GND_14_o_add_1_OUT> created at line 23.
+    Found 4-bit adder for signal <i[3]_GND_14_o_add_5_OUT> created at line 40.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <smg_control_module> synthesized.
+
+Synthesizing Unit <smg_encode_module>.
+    Related source file is "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\smg\smg_encode_module.v".
+        _0 = 8'b11000000
+        _1 = 8'b11111001
+        _2 = 8'b10100100
+        _3 = 8'b10110000
+        _4 = 8'b10011001
+        _5 = 8'b10010010
+        _6 = 8'b10000010
+        _7 = 8'b11111000
+        _8 = 8'b10000000
+        _9 = 8'b10010000
+    Found 8-bit register for signal <rSMG>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <smg_encode_module> synthesized.
+
+Synthesizing Unit <smg_scan_module>.
+    Related source file is "C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\rtl\smg\smg_scan_module.v".
+        T1MS = 16'b1100001101001111
+    Found 4-bit register for signal <i>.
+    Found 16-bit register for signal <C1>.
+    Found 6-bit register for signal <rScan>.
+    Found 16-bit adder for signal <C1[15]_GND_17_o_add_1_OUT> created at line 22.
+    Found 4-bit adder for signal <i[3]_GND_17_o_add_5_OUT> created at line 39.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <smg_scan_module> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 32x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 141
+ 1-bit adder                                           : 2
+ 10-bit adder                                          : 1
+ 16-bit adder                                          : 9
+ 16-bit subtractor                                     : 2
+ 20-bit adder                                          : 1
+ 32-bit adder                                          : 29
+ 33-bit adder                                          : 1
+ 34-bit adder                                          : 1
+ 35-bit adder                                          : 1
+ 36-bit adder                                          : 1
+ 37-bit adder                                          : 1
+ 38-bit adder                                          : 1
+ 39-bit adder                                          : 1
+ 4-bit adder                                           : 83
+ 40-bit adder                                          : 1
+ 41-bit adder                                          : 1
+ 42-bit adder                                          : 1
+ 43-bit adder                                          : 1
+ 44-bit adder                                          : 1
+ 45-bit adder                                          : 1
+ 46-bit adder                                          : 1
+# Registers                                            : 59
+ 1-bit register                                        : 27
+ 10-bit register                                       : 1
+ 16-bit register                                       : 9
+ 20-bit register                                       : 1
+ 24-bit register                                       : 1
+ 32-bit register                                       : 14
+ 4-bit register                                        : 4
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 127
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 7
+ 20-bit comparator greater                             : 1
+ 3-bit comparator lessequal                            : 6
+ 32-bit comparator greater                             : 4
+ 32-bit comparator lessequal                           : 19
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 4-bit comparator lessequal                            : 75
+ 40-bit comparator lessequal                           : 1
+ 41-bit comparator lessequal                           : 1
+ 42-bit comparator lessequal                           : 1
+ 43-bit comparator lessequal                           : 1
+ 44-bit comparator lessequal                           : 1
+ 45-bit comparator lessequal                           : 1
+ 46-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1056
+ 1-bit 2-to-1 multiplexer                              : 930
+ 16-bit 2-to-1 multiplexer                             : 25
+ 32-bit 2-to-1 multiplexer                             : 5
+ 4-bit 2-to-1 multiplexer                              : 90
+ 6-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <regTest2> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <j3red_led_2r> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <j3green_led_1r> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <j3green_led_2r> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <binaryDATA2_16> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <binaryDATA2_17> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <binaryDATA2_18> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <binaryDATA2_19> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <binaryDATA2_20> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <binaryDATA2_21> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <binaryDATA2_22> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <binaryDATA2_23> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTestAdds_29> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTestAdds_30> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTestAdds_31> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <fl_count2_1> of sequential type is unconnected in block <sdram_ov5640_lcd>.
+WARNING:Xst:2677 - Node <fl_count2_2> of sequential type is unconnected in block <sdram_ov5640_lcd>.
+WARNING:Xst:2677 - Node <fl_count2_3> of sequential type is unconnected in block <sdram_ov5640_lcd>.
+WARNING:Xst:2404 -  FFs/Latches <counterTestAdds<31:29>> (without init value) have a constant value of 0 in block <sdram_ov5640_lcd>.
+WARNING:Xst:2404 -  FFs/Latches <binaryDATA2<23:16>> (without init value) have a constant value of 0 in block <sdram_ov5640_lcd>.
+
+Synthesizing (advanced) Unit <power_on_delay>.
+The following registers are absorbed into counter <cnt2>: 1 register on signal <cnt2>.
+The following registers are absorbed into counter <cnt3>: 1 register on signal <cnt3>.
+Unit <power_on_delay> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sdram_ov5640_lcd>.
+The following registers are absorbed into counter <counterSoftStop>: 1 register on signal <counterSoftStop>.
+The following registers are absorbed into counter <counterTest2>: 1 register on signal <counterTest2>.
+The following registers are absorbed into counter <counterAnilox>: 1 register on signal <counterAnilox>.
+The following registers are absorbed into counter <fl_invert>: 1 register on signal <fl_invert>.
+The following registers are absorbed into counter <fl_invert2>: 1 register on signal <fl_invert2>.
+The following registers are absorbed into counter <counterTest1>: 1 register on signal <counterTest1>.
+	The following adders/subtractors are grouped into adder tree <Madd_n03511> :
+ 	<Madd_n0490> in block <sdram_ov5640_lcd>, 	<Madd_n0493> in block <sdram_ov5640_lcd>, 	<Madd_n0496> in block <sdram_ov5640_lcd>, 	<Madd_n0499> in block <sdram_ov5640_lcd>, 	<Madd_n0502> in block <sdram_ov5640_lcd>, 	<Madd_n0505> in block <sdram_ov5640_lcd>, 	<Madd_n0351> in block <sdram_ov5640_lcd>.
+Unit <sdram_ov5640_lcd> synthesized (advanced).
+
+Synthesizing (advanced) Unit <smg_control_module>.
+The following registers are absorbed into counter <C1>: 1 register on signal <C1>.
+Unit <smg_control_module> synthesized (advanced).
+
+Synthesizing (advanced) Unit <smg_scan_module>.
+The following registers are absorbed into counter <C1>: 1 register on signal <C1>.
+Unit <smg_scan_module> synthesized (advanced).
+
+Synthesizing (advanced) Unit <system_ctrl>.
+The following registers are absorbed into counter <delay_cnt>: 1 register on signal <delay_cnt>.
+Unit <system_ctrl> synthesized (advanced).
+WARNING:Xst:2677 - Node <fl_count2_1> of sequential type is unconnected in block <sdram_ov5640_lcd>.
+WARNING:Xst:2677 - Node <fl_count2_2> of sequential type is unconnected in block <sdram_ov5640_lcd>.
+WARNING:Xst:2677 - Node <fl_count2_3> of sequential type is unconnected in block <sdram_ov5640_lcd>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 30x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 123
+ 16-bit adder                                          : 6
+ 16-bit subtractor                                     : 2
+ 32-bit adder                                          : 32
+ 4-bit adder                                           : 83
+# Adder Trees                                          : 1
+ 32-bit / 8-inputs adder tree                          : 1
+# Counters                                             : 11
+ 1-bit up counter                                      : 2
+ 10-bit up counter                                     : 1
+ 16-bit up counter                                     : 3
+ 20-bit up counter                                     : 1
+ 32-bit up counter                                     : 4
+# Registers                                            : 481
+ Flip-Flops                                            : 481
+# Comparators                                          : 127
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 7
+ 20-bit comparator greater                             : 1
+ 3-bit comparator lessequal                            : 6
+ 32-bit comparator greater                             : 4
+ 32-bit comparator lessequal                           : 19
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 4-bit comparator lessequal                            : 75
+ 40-bit comparator lessequal                           : 1
+ 41-bit comparator lessequal                           : 1
+ 42-bit comparator lessequal                           : 1
+ 43-bit comparator lessequal                           : 1
+ 44-bit comparator lessequal                           : 1
+ 45-bit comparator lessequal                           : 1
+ 46-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1051
+ 1-bit 2-to-1 multiplexer                              : 929
+ 16-bit 2-to-1 multiplexer                             : 23
+ 32-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 90
+ 6-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <regTest2> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <j3green_led_2r> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <j3red_led_2r> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <j3green_led_1r> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <red_led_2r> in Unit <sdram_ov5640_lcd> is equivalent to the following FF/Latch, which will be removed : <fl_soft_stop> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_1> on signal <fl_count1[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0
+ 0001  | 1
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <fl_sum[1:11]> with one-hot encoding.
+-------------------------
+ State    | Encoding
+-------------------------
+ 00000000 | 00000000001
+ 00000010 | 00000000010
+ 00000011 | 00000000100
+ 00000100 | 00000001000
+ 00000101 | 00000010000
+ 00000110 | 00000100000
+ 00000111 | 00001000000
+ 00001000 | 00010000000
+ 00001001 | 00100000000
+ 00001010 | 01000000000
+ 00000001 | 10000000000
+-------------------------
+WARNING:Xst:1710 - FF/Latch <rSMG_7> (without init value) has a constant value of 1 in block <smg_encode_module>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance pll_base_inst in unit pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <sdram_pll> ...
+
+Optimizing unit <sdram_ov5640_lcd> ...
+
+Optimizing unit <power_on_delay> ...
+
+Optimizing unit <bin2bcd_v2> ...
+
+Optimizing unit <smg_control_module> ...
+WARNING:Xst:1710 - FF/Latch <i_3> (without init value) has a constant value of 0 in block <smg_control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_3> (without init value) has a constant value of 0 in block <smg_control_module>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <smg_encode_module> ...
+
+Optimizing unit <smg_scan_module> ...
+WARNING:Xst:1710 - FF/Latch <i_3> (without init value) has a constant value of 0 in block <smg_scan_module>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <div_32u_14u> ...
+WARNING:Xst:1710 - FF/Latch <counterTest3_19> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_20> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_21> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_22> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_23> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_24> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_25> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_26> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_27> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_28> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_29> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_30> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest3_31> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_30> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_29> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_31> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_27> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_26> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_28> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_24> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_23> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_25> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_21> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_20> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_22> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterTest2_19> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_31> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_30> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_28> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_27> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_29> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_25> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_24> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_26> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_31> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_30> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_28> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_27> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_29> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_25> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_24> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_26> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_22> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_21> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_23> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_19> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_18> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_20> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_16> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_15> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_17> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_13> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_12> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_14> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_10> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterAnilox_11> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key3pushCount_13> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key3pushCount_12> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key3pushCount_11> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key3pushCount_10> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key2pushCount_15> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key2pushCount_14> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key2pushCount_13> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key2pushCount_12> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key2pushCount_11> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key2pushCount_10> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key4pushCount_15> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key4pushCount_14> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key4pushCount_13> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key4pushCount_12> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key4pushCount_11> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key4pushCount_10> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key1pushCount_15> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key1pushCount_14> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key1pushCount_13> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key1pushCount_12> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key1pushCount_11> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key1pushCount_10> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_23> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_22> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_21> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_20> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counterSoftStop_19> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <keyCount_15> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <keyCount_14> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <keyCount_13> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <keyCount_12> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <keyCount_11> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key3pushCount_15> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <key3pushCount_14> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <binaryDATA2_11> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <binaryDATA2_12> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <binaryDATA2_13> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <binaryDATA2_14> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <binaryDATA2_15> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <keyCountOld_11> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <keyCountOld_12> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <keyCountOld_13> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <keyCountOld_14> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <keyCountOld_15> (without init value) has a constant value of 0 in block <sdram_ov5640_lcd>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sdram_ov5640_lcd, actual ratio is 34.
+FlipFlop j3red_led_1r has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 593
+ Flip-Flops                                            : 593
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sdram_ov5640_lcd.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3436
+#      GND                         : 1
+#      INV                         : 60
+#      LUT1                        : 189
+#      LUT2                        : 177
+#      LUT3                        : 248
+#      LUT4                        : 218
+#      LUT5                        : 441
+#      LUT6                        : 572
+#      MUXCY                       : 770
+#      MUXF7                       : 38
+#      VCC                         : 1
+#      XORCY                       : 721
+# FlipFlops/Latches                : 594
+#      FDC                         : 32
+#      FDCE                        : 26
+#      FDE                         : 22
+#      FDPE                        : 8
+#      FDR                         : 74
+#      FDRE                        : 431
+#      ODDR2                       : 1
+# Clock Buffers                    : 7
+#      BUFG                        : 7
+# IO Buffers                       : 35
+#      IBUF                        : 8
+#      IBUFG                       : 1
+#      OBUF                        : 26
+# DSPs                             : 2
+#      DSP48A1                     : 2
+# Others                           : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             591  out of  11440     5%  
+ Number of Slice LUTs:                 1905  out of   5720    33%  
+    Number used as Logic:              1905  out of   5720    33%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2169
+   Number with an unused Flip Flop:    1578  out of   2169    72%  
+   Number with an unused LUT:           264  out of   2169    12%  
+   Number of fully used LUT-FF pairs:   327  out of   2169    15%  
+   Number of unique control sets:        54
+
+IO Utilization: 
+ Number of IOs:                          36
+ Number of bonded IOBs:                  35  out of    186    18%  
+    IOB Flip Flops/Latches:               3
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                7  out of     16    43%  
+ Number of DSP48A1s:                      2  out of     16    12%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------+------------------------+-------+
+Clock Signal                                   | Clock buffer(FF name)  | Load  |
+-----------------------------------------------+------------------------+-------+
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5| BUFG                   | 489   |
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT1| BUFG                   | 11    |
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT2| BUFG                   | 2     |
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT0| BUFG                   | 39    |
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT4| BUFG                   | 55    |
+-----------------------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 76.379ns (Maximum Frequency: 13.093MHz)
+   Minimum input arrival time before clock: 7.286ns
+   Maximum output required time after clock: 4.346ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5'
+  Clock period: 76.379ns (frequency: 13.093MHz)
+  Total number of paths / destination ports: 2964319633919517700000000000000 / 990
+-------------------------------------------------------------------------
+Delay:               76.379ns (Levels of Logic = 88)
+  Source:            Mmult_n0355 (DSP)
+  Destination:       counterTest3_0 (FF)
+  Source Clock:      u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5 rising
+  Destination Clock: u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5 rising
+
+  Data Path: Mmult_n0355 to counterTest3_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48A1:CLK->P47     18   7.889   1.234  Mmult_n0355 (Mmult_n0355_P47_to_Mmult_n03551)
+     DSP48A1:C30->P7      20   3.141   1.716  Mmult_n03551 (n0355<24>)
+     LUT5:I0->O            2   0.254   0.954  counterTestAdds[31]_PWR_1_o_div_51/o<18>1_SW2 (N883)
+     LUT6:I3->O            1   0.235   0.910  counterTestAdds[31]_PWR_1_o_div_51/o<17>111_1 (counterTestAdds[31]_PWR_1_o_div_51/o<17>111)
+     LUT5:I2->O           12   0.235   1.069  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_31_OUT_cy<28>11 (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_31_OUT_cy<28>)
+     LUT6:I5->O            2   0.254   0.726  counterTestAdds[31]_PWR_1_o_div_51/o<17>1_1 (counterTestAdds[31]_PWR_1_o_div_51/o<17>1)
+     LUT6:I5->O           16   0.254   1.290  counterTestAdds[31]_PWR_1_o_div_51/o<16>13 (counterTestAdds[31]_PWR_1_o_div_51/o<16>12)
+     LUT6:I4->O            3   0.250   0.766  counterTestAdds[31]_PWR_1_o_div_51/o<16>14_1 (counterTestAdds[31]_PWR_1_o_div_51/o<16>14)
+     LUT6:I5->O            9   0.254   1.084  counterTestAdds[31]_PWR_1_o_div_51/o<15>22 (counterTestAdds[31]_PWR_1_o_div_51/o<15>21)
+     LUT6:I4->O            5   0.250   0.841  counterTestAdds[31]_PWR_1_o_div_51/o<15>24_1 (counterTestAdds[31]_PWR_1_o_div_51/o<15>24)
+     LUT5:I4->O           10   0.254   1.438  counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1417_o1181 (counterTestAdds[31]_PWR_1_o_div_51/a[26]_a[31]_MUX_1391_o)
+     LUT6:I1->O            5   0.254   0.841  counterTestAdds[31]_PWR_1_o_div_51/o<14>24_1 (counterTestAdds[31]_PWR_1_o_div_51/o<14>24)
+     LUT5:I4->O           18   0.254   1.343  counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1449_o1151 (counterTestAdds[31]_PWR_1_o_div_51/a[23]_a[31]_MUX_1426_o)
+     LUT5:I3->O           18   0.250   1.235  counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1481_o1241_SW0 (N506)
+     LUT6:I5->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_41_OUT_lut<19> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_41_OUT_lut<19>)
+     MUXCY:S->O            1   0.215   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_41_OUT_cy<19> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_41_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_41_OUT_cy<20> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_41_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_41_OUT_cy<21> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_41_OUT_cy<21>)
+     XORCY:CI->O          10   0.206   1.438  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_41_OUT_xor<22> (counterTestAdds[31]_PWR_1_o_div_51/a[31]_GND_10_o_add_41_OUT<22>)
+     LUT6:I1->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/o<11>26_SW1_G (N1486)
+     MUXF7:I1->O          17   0.175   1.437  counterTestAdds[31]_PWR_1_o_div_51/o<11>26_SW1 (N85)
+     LUT5:I2->O           17   0.235   1.209  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_lut<22>_SW0_SW0 (N614)
+     LUT6:I5->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1545_o11011 (counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1545_o1101)
+     MUXCY:S->O            1   0.215   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<19> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<20> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<21> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<22> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<23> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<24> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<25> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<26> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<27> (counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_cy<27>)
+     XORCY:CI->O          36   0.206   2.042  counterTestAdds[31]_PWR_1_o_div_51/Madd_a[31]_GND_10_o_add_45_OUT_xor<28> (counterTestAdds[31]_PWR_1_o_div_51/a[31]_GND_10_o_add_45_OUT<28>)
+     LUT6:I0->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1577_o1201_G (N1462)
+     MUXF7:I1->O           3   0.175   0.874  counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1577_o1201 (counterTestAdds[31]_PWR_1_o_div_51/a[28]_a[31]_MUX_1549_o)
+     LUT6:I4->O            1   0.250   0.790  counterTestAdds[31]_PWR_1_o_div_51/o<9>33_SW2 (N1312)
+     LUT6:I4->O           14   0.250   1.127  counterTestAdds[31]_PWR_1_o_div_51/o<9>35 (counterTestAdds[31]_PWR_1_o_div_51_OUT<9>)
+     LUT6:I5->O           19   0.254   1.261  counterTestAdds[31]_PWR_1_o_div_51/o<8>31 (counterTestAdds[31]_PWR_1_o_div_51/o<8>3)
+     LUT4:I3->O           15   0.254   1.155  counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1641_o1231_SW0_SW1 (N1329)
+     LUT6:I5->O            3   0.254   1.196  counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1641_o1181 (counterTestAdds[31]_PWR_1_o_div_51/a[26]_a[31]_MUX_1615_o)
+     LUT5:I0->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<7>_lut<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<7>_lut<3>)
+     MUXCY:S->O            1   0.215   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<7>_cy<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<7>_cy<3>)
+     MUXCY:CI->O          70   0.262   1.976  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<7>_cy<4> (counterTestAdds[31]_PWR_1_o_div_51_OUT<7>)
+     LUT5:I4->O            5   0.254   1.271  counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1673_o1171 (counterTestAdds[31]_PWR_1_o_div_51/a[25]_a[31]_MUX_1648_o)
+     LUT5:I0->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<6>_lut<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<6>_lut<3>)
+     MUXCY:S->O            1   0.215   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<6>_cy<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<6>_cy<3>)
+     MUXCY:CI->O          82   0.262   2.069  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<6>_cy<4> (counterTestAdds[31]_PWR_1_o_div_51_OUT<6>)
+     LUT3:I2->O            2   0.254   1.156  counterTestAdds[31]_PWR_1_o_div_51/a[10]_a[31]_MUX_1695_o1 (counterTestAdds[31]_PWR_1_o_div_51/a[10]_a[31]_MUX_1695_o)
+     LUT5:I0->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_lut<0> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_cy<0> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_cy<1> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_cy<2> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_cy<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_cy<3>)
+     MUXCY:CI->O          74   0.262   2.007  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<5>_cy<4> (counterTestAdds[31]_PWR_1_o_div_51_OUT<5>)
+     LUT5:I4->O            5   0.254   1.271  counterTestAdds[31]_PWR_1_o_div_51/Mmux_a[0]_a[31]_MUX_1737_o1151 (counterTestAdds[31]_PWR_1_o_div_51/a[23]_a[31]_MUX_1714_o)
+     LUT5:I0->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<4>_lut<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<4>_lut<3>)
+     MUXCY:S->O            1   0.215   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<4>_cy<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<4>_cy<3>)
+     MUXCY:CI->O          90   0.262   2.131  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<4>_cy<4> (counterTestAdds[31]_PWR_1_o_div_51_OUT<4>)
+     LUT3:I2->O            4   0.254   1.234  counterTestAdds[31]_PWR_1_o_div_51/a[8]_a[31]_MUX_1761_o1 (counterTestAdds[31]_PWR_1_o_div_51/a[8]_a[31]_MUX_1761_o)
+     LUT5:I0->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_lut<0> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_cy<0> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_cy<1> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_cy<2> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_cy<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_cy<3>)
+     MUXCY:CI->O          98   0.262   2.193  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<3>_cy<4> (counterTestAdds[31]_PWR_1_o_div_51_OUT<3>)
+     LUT3:I2->O            3   0.254   1.196  counterTestAdds[31]_PWR_1_o_div_51/n2709<7>1 (counterTestAdds[31]_PWR_1_o_div_51/n2709<7>)
+     LUT5:I0->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_lut<0> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<0> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<1> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<2> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<4> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<4>)
+     MUXCY:CI->O          79   0.262   2.046  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<2>_cy<5> (counterTestAdds[31]_PWR_1_o_div_51_OUT<2>)
+     LUT3:I2->O            2   0.254   1.156  counterTestAdds[31]_PWR_1_o_div_51/n2713<6>1 (counterTestAdds[31]_PWR_1_o_div_51/n2713<6>)
+     LUT5:I0->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_lut<0> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<0> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<1> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<2> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<4> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<4>)
+     MUXCY:CI->O          28   0.262   1.453  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<1>_cy<5> (counterTestAdds[31]_PWR_1_o_div_51_OUT<1>)
+     LUT3:I2->O            2   0.254   1.156  counterTestAdds[31]_PWR_1_o_div_51/Mmux_n2584281 (counterTestAdds[31]_PWR_1_o_div_51/n2584<5>)
+     LUT5:I0->O            1   0.254   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_lut<0> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<0> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<1> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<2> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<3> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<4> (counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<4>)
+     MUXCY:CI->O           1   0.262   0.000  counterTestAdds[31]_PWR_1_o_div_51/Mcompar_o<0>_cy<5> (counterTestAdds[31]_PWR_1_o_div_51_OUT<0>)
+     FDRE:D                    0.074          counterTest3_0
+    ----------------------------------------
+    Total                     76.379ns (26.086ns logic, 50.293ns route)
+                                       (34.2% logic, 65.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT1'
+  Clock period: 4.328ns (frequency: 231.054MHz)
+  Total number of paths / destination ports: 165 / 21
+-------------------------------------------------------------------------
+Delay:               4.328ns (Levels of Logic = 2)
+  Source:            u_system_ctrl/delay_cnt_8 (FF)
+  Destination:       u_system_ctrl/delay_cnt_0 (FF)
+  Source Clock:      u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT1 rising
+  Destination Clock: u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT1 rising
+
+  Data Path: u_system_ctrl/delay_cnt_8 to u_system_ctrl/delay_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.525   1.156  u_system_ctrl/delay_cnt_8 (u_system_ctrl/delay_cnt_8)
+     LUT5:I0->O            2   0.254   0.834  u_system_ctrl/GND_2_o_GND_2_o_equal_1_o<9>_SW0 (N0)
+     LUT6:I4->O           10   0.250   1.007  u_system_ctrl/GND_2_o_GND_2_o_equal_1_o_inv (u_system_ctrl/GND_2_o_GND_2_o_equal_1_o_inv)
+     FDCE:CE                   0.302          u_system_ctrl/delay_cnt_0
+    ----------------------------------------
+    Total                      4.328ns (1.331ns logic, 2.997ns route)
+                                       (30.8% logic, 69.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT0'
+  Clock period: 4.957ns (frequency: 201.735MHz)
+  Total number of paths / destination ports: 1076 / 112
+-------------------------------------------------------------------------
+Delay:               4.957ns (Levels of Logic = 2)
+  Source:            power_on_delay_inst/cnt3_7 (FF)
+  Destination:       power_on_delay_inst/cnt3_19 (FF)
+  Source Clock:      u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT0 rising
+  Destination Clock: u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT0 rising
+
+  Data Path: power_on_delay_inst/cnt3_7 to power_on_delay_inst/cnt3_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.525   1.181  power_on_delay_inst/cnt3_7 (power_on_delay_inst/cnt3_7)
+     LUT6:I0->O            2   0.254   1.156  power_on_delay_inst/cnt3[19]_PWR_8_o_LessThan_14_o33 (power_on_delay_inst/cnt3[19]_PWR_8_o_LessThan_14_o32)
+     LUT5:I0->O           20   0.254   1.285  power_on_delay_inst/cnt3[19]_PWR_8_o_LessThan_14_o34 (power_on_delay_inst/cnt3[19]_PWR_8_o_LessThan_14_o)
+     FDRE:CE                   0.302          power_on_delay_inst/cnt3_0
+    ----------------------------------------
+    Total                      4.957ns (1.335ns logic, 3.622ns route)
+                                       (26.9% logic, 73.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT4'
+  Clock period: 6.226ns (frequency: 160.617MHz)
+  Total number of paths / destination ports: 1165 / 78
+-------------------------------------------------------------------------
+Delay:               6.226ns (Levels of Logic = 3)
+  Source:            u4/U2/U3/C1_4 (FF)
+  Destination:       u4/U2/U3/rScan_5 (FF)
+  Source Clock:      u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT4 rising
+  Destination Clock: u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT4 rising
+
+  Data Path: u4/U2/U3/C1_4 to u4/U2/U3/rScan_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   1.181  u4/U2/U3/C1_4 (u4/U2/U3/C1_4)
+     LUT6:I0->O            1   0.254   1.137  u4/U2/U3/C1[15]_PWR_16_o_equal_5_o<15>2 (u4/U2/U3/C1[15]_PWR_16_o_equal_5_o<15>1)
+     LUT6:I0->O           18   0.254   1.463  u4/U2/U3/C1[15]_PWR_16_o_equal_5_o<15>4 (u4/U2/U3/C1[15]_PWR_16_o_equal_5_o)
+     LUT3:I0->O            6   0.235   0.875  u4/U2/U3/_n0139_inv1 (u4/U2/U3/_n0139_inv)
+     FDCE:CE                   0.302          u4/U2/U3/rScan_0
+    ----------------------------------------
+    Total                      6.226ns (1.570ns logic, 4.656ns route)
+                                       (25.2% logic, 74.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5'
+  Total number of paths / destination ports: 460 / 275
+-------------------------------------------------------------------------
+Offset:              7.286ns (Levels of Logic = 4)
+  Source:            key4 (PAD)
+  Destination:       Mmult_n0355 (DSP)
+  Destination Clock: u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5 rising
+
+  Data Path: key4 to Mmult_n0355
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            28   1.328   1.681  key4_IBUF (key4_IBUF)
+     LUT5:I2->O           14   0.235   1.403  Mmux_keyCount[15]_GND_1_o_mux_148_OUT1111 (Mmux_keyCount[15]_GND_1_o_mux_148_OUT111)
+     LUT4:I0->O            4   0.254   1.234  Mmux_keyCount[15]_GND_1_o_mux_148_OUT191 (Mmux_keyCount[15]_GND_1_o_mux_148_OUT19)
+     LUT6:I1->O            2   0.254   0.725  Mmux_keyCount[15]_GND_1_o_mux_148_OUT2 (keyCount[15]_GND_1_o_mux_148_OUT<10>)
+     DSP48A1:B10               0.172          Mmult_n0355
+    ----------------------------------------
+    Total                      7.286ns (2.243ns logic, 5.043ns route)
+                                       (30.8% logic, 69.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.761ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       u_system_ctrl/delay_done (FF)
+  Destination Clock: u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT1 rising
+
+  Data Path: rst_n to u_system_ctrl/delay_done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             11   0.255   1.038  rst_n_inv1_INV_0 (rst_n_inv)
+     FDCE:CLR                  0.459          u_system_ctrl/delay_cnt_0
+    ----------------------------------------
+    Total                      3.761ns (2.042ns logic, 1.719ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT4'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            u4/U2/U2/rSMG_6 (FF)
+  Destination:       SMG_Data<6> (PAD)
+  Source Clock:      u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT4 rising
+
+  Data Path: u4/U2/U2/rSMG_6 to SMG_Data<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             1   0.525   0.681  u4/U2/U2/rSMG_6 (u4/U2/U2/rSMG_6)
+     OBUF:I->O                 2.912          SMG_Data_6_OBUF (SMG_Data<6>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.346ns (Levels of Logic = 1)
+  Source:            red_led_2r (FF)
+  Destination:       red_led_2 (PAD)
+  Source Clock:      u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5 rising
+
+  Data Path: red_led_2r to red_led_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.525   0.909  red_led_2r (red_led_2r)
+     OBUF:I->O                 2.912          red_led_2_OBUF (red_led_2)
+    ----------------------------------------
+    Total                      4.346ns (3.437ns logic, 0.909ns route)
+                                       (79.1% logic, 20.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT0
+-----------------------------------------------+---------+---------+---------+---------+
+                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------+---------+---------+---------+---------+
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT0|    4.957|         |         |         |
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT1|    1.709|         |         |         |
+-----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT1
+-----------------------------------------------+---------+---------+---------+---------+
+                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------+---------+---------+---------+---------+
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT1|    4.328|         |         |         |
+-----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT4
+-----------------------------------------------+---------+---------+---------+---------+
+                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------+---------+---------+---------+---------+
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT1|    3.823|         |         |         |
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT4|    6.226|         |         |         |
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5|   15.437|         |         |         |
+-----------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5
+-----------------------------------------------+---------+---------+---------+---------+
+                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------+---------+---------+---------+---------+
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT0|    5.352|         |         |         |
+u_system_ctrl/u_sdram_pll/pll_base_inst/CLKOUT5|   76.379|         |         |         |
+-----------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 31.86 secs
+ 
+--> 
+
+Total memory usage is 314352 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  152 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

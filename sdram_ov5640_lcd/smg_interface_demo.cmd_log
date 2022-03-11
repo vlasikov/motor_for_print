@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj sdram_ov5640_lcd -o C:/arbeit/bon/bnXilinx/AX309/25_sdram_ov5640_lcd/sdram_ov5640_lcd/smg_interface_demo.tfi -lib work C:/arbeit/bon/bnXilinx/AX309/25_sdram_ov5640_lcd/sdram_ov5640_lcd/rtl/smg//smg_interface_demo.v -module smg_interface_demo -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

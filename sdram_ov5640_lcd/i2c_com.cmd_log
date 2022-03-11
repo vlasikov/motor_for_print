@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj sdram_ov5640_lcd -o C:/arbeit/bon/bnXilinx/AX309/25_sdram_ov5640_lcd/sdram_ov5640_lcd/i2c_com.tfi -lib work C:/arbeit/bon/bnXilinx/AX309/25_sdram_ov5640_lcd/sdram_ov5640_lcd/rtl/cmos_i2c_ov5640//i2c_com.v -module i2c_com -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

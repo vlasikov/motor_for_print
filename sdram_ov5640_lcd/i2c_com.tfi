@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+i2c_com instance_name (
+    .clock_i2c(clock_i2c), 
+    .camera_rstn(camera_rstn), 
+    .ack(ack), 
+    .i2c_data(i2c_data), 
+    .start(start), 
+    .tr_end(tr_end), 
+    .i2c_sclk(i2c_sclk), 
+    .i2c_sdat(i2c_sdat), 
+    .fl_read(fl_read)
+    );
+
+
