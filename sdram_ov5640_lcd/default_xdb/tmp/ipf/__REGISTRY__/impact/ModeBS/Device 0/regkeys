@@ -11,7 +11,7 @@ ConfigFileName
 sdram_ov5640_lcd.bit
 s
 ConfigFilePath
-C:/arbeit/bon/bnXilinx/AX309/25_sdram_ov5640_lcd/sdram_ov5640_lcd
+C:/Users/PC/git/motor_for_print/sdram_ov5640_lcd
 s
 NumberOfDeviceOptions
 110

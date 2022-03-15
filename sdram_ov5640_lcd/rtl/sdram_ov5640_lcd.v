@@ -46,6 +46,9 @@ module sdram_ov5640_lcd
 );
 //---------------------------------------------
 
+reg [31:0] my_reg;
+reg [31:0] my_speed;
+reg my_reg_acceleration;
 //wire flashwr;
 //wire framewr;
 //wire sensor1wr;
@@ -195,6 +198,9 @@ always@ (posedge bn_test_clk)   //12MHz//175MHz
 //always@ (posedge clk_camera)   //24MHz
 begin
  if (initial_en==0) begin
+	 my_reg<=0;
+	 my_speed<=0;
+	 my_reg_acceleration<=1;
 	 regFiltr<=0;
 	 regTest<=0;
 	 regTest2<=0;
@@ -441,14 +447,37 @@ begin
     //fl_sum<=0;
   //end;
   //---------------------------------------------
-  //Anilox speed generator
-  if (counterAnilox<1000) begin //2000 small//300000 - very small speed
-	   counterAnilox<=counterAnilox+1;
-  end
-  else begin
+	//Anilox speed generator
+	if (my_reg > 0) begin
+		my_reg <= my_reg - 1;	//my_reg_acceleration
+	end
+	else begin
+		my_reg <= 1000000;
+		
+		if (my_reg_acceleration > 0) begin						// 0 or 1 (1 - speed positiv)
+			if (my_speed > 80) begin
+				my_reg_acceleration <= my_reg_acceleration + 1;		// direction invert
+			end	
+			else
+				my_speed <= my_speed + 1;
+		end
+		else begin
+			if (my_speed < 1) begin
+				my_reg_acceleration <= my_reg_acceleration + 1;
+			end	
+			else
+				my_speed <= my_speed - 1;
+		end
+	end
+	
+	if (counterAnilox < (120 - my_speed) ) begin 			//2000 small//300000 - very small speed
+		counterAnilox<=counterAnilox+1;
+	end
+	else begin
 		counterAnilox<=0;
 		fl_invert2<=fl_invert2+1;
-  end 
+	end
+	
   //---------------------------------------------
   if (fl_startstop==0) begin 
          //Print ON

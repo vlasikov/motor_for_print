@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\sdram_ov5640_lcd.ncd
-OUTFILE=C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd\sdram_ov5640_lcd.bit
+INFILE=C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\sdram_ov5640_lcd.ncd
+OUTFILE=C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\sdram_ov5640_lcd.bit
 FAMILY=Spartan6
 PART=xc6slx9-2ftg256
-WORKINGDIR=C:\arbeit\bon\bnXilinx\AX309\tmp\smg01\sdram_ov5640_lcd
+WORKINGDIR=C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd
 LICENSE=WebPack
-USER_INFO=_
+USER_INFO=__0_0_0

@@ -2,8 +2,8 @@ module smg_interface_demo
 (
     input CLK,
 	 input RSTn,
-	 output [7:0]SMG_Data,
-	 output [5:0]Scan_Sig,
+	 output [7:0]SMG_Data,				// 
+	 output [5:0]Scan_Sig,				// текущее значение на дисплее
 	 input  [23:0] binaryDATA
 );
 

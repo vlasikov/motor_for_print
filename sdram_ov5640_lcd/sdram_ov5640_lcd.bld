@@ -6,8 +6,7 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 xc6slx9-ftg256-2 sdram_ov5640_lcd.ngc sdram_ov5640_lcd.ngd
 
 Reading NGO file
-"C:/arbeit/bon/bnXilinx/AX309/tmp/smg01/sdram_ov5640_lcd/sdram_ov5640_lcd.ngc"
-...
+"C:/Users/PC/git/motor_for_print/sdram_ov5640_lcd/sdram_ov5640_lcd.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -64,10 +63,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 172696 kilobytes
+Total memory usage is 169476 kilobytes
 
 Writing NGD file "sdram_ov5640_lcd.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
-Total CPU time to NGDBUILD completion:   4 sec
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "sdram_ov5640_lcd.bld"...
