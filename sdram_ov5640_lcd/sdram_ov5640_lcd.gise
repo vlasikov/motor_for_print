@@ -227,6 +227,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="sdram_ov5640_lcd.pcf"/>
       <outfile xil_pn:name="sdram_ov5640_lcd_map.map"/>
@@ -255,6 +257,8 @@
     <transform xil_pn:end_ts="1647352338" xil_pn:in_ck="-8199680059929513032" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1647352328">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="sdram_ov5640_lcd.bgn"/>
       <outfile xil_pn:name="sdram_ov5640_lcd.bit"/>
