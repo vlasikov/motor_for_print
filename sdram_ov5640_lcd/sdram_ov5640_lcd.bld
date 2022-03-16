@@ -63,7 +63,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 169476 kilobytes
+Total memory usage is 173400 kilobytes
 
 Writing NGD file "sdram_ov5640_lcd.ngd" ...
 Total REAL time to NGDBUILD completion:  2 sec
