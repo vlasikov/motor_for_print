@@ -7,6 +7,7 @@ Data			By			Version			Change Description
 15/02/1
 --------------------------------------------------------------------------*/
 `timescale 1ns / 1ps
+
 module sdram_ov5640_lcd
 (
 	//global clock 50MHz
@@ -452,7 +453,7 @@ begin
 		my_reg <= my_reg - 1;	//my_reg_acceleration
 	end
 	else begin
-		my_reg <= 1000000;
+		my_reg <= 3300000;
 		
 		if (my_reg_acceleration > 0) begin						// 0 or 1 (1 - speed positiv)
 			if (my_speed > 80) begin

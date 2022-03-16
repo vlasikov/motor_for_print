@@ -5,52 +5,52 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 106: Assignment to <arg fmt="%s" index="1">clk_ref</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 107: Assignment to <arg fmt="%s" index="1">clk_ref</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 107: Assignment to <arg fmt="%s" index="1">clk_refout</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 108: Assignment to <arg fmt="%s" index="1">clk_refout</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 108: Assignment to <arg fmt="%s" index="1">clk_vga</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 109: Assignment to <arg fmt="%s" index="1">clk_vga</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 459: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 460: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 466: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 467: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 478: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 479: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 528: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 529: Result of <arg fmt="%d" index="1">2</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 537: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 538: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 543: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 544: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 552: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 553: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 558: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 559: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 567: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 568: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 573: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 574: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 582: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 583: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 588: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 589: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 194: Assignment to <arg fmt="%s" index="1">regFiltr</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 195: Assignment to <arg fmt="%s" index="1">regFiltr</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\bin2bcd_v2.v" Line 47: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
@@ -74,22 +74,22 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">j3sensor2</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">99</arg>: Output port &lt;<arg fmt="%s" index="3">clk_c1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_system_ctrl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">100</arg>: Output port &lt;<arg fmt="%s" index="3">clk_c1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_system_ctrl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">99</arg>: Output port &lt;<arg fmt="%s" index="3">clk_c2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_system_ctrl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">100</arg>: Output port &lt;<arg fmt="%s" index="3">clk_c2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_system_ctrl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">99</arg>: Output port &lt;<arg fmt="%s" index="3">clk_c3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_system_ctrl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">100</arg>: Output port &lt;<arg fmt="%s" index="3">clk_c3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_system_ctrl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">115</arg>: Output port &lt;<arg fmt="%s" index="3">camera_rstn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">power_on_delay_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">116</arg>: Output port &lt;<arg fmt="%s" index="3">camera_rstn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">power_on_delay_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">115</arg>: Output port &lt;<arg fmt="%s" index="3">camera_pwnd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">power_on_delay_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">116</arg>: Output port &lt;<arg fmt="%s" index="3">camera_pwnd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">power_on_delay_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">115</arg>: Output port &lt;<arg fmt="%s" index="3">cmos_reset_bar</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">power_on_delay_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">116</arg>: Output port &lt;<arg fmt="%s" index="3">cmos_reset_bar</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">power_on_delay_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\PC\git\motor_for_print\sdram_ov5640_lcd\rtl\system_ctrl.v</arg>&quot; line <arg fmt="%s" index="2">47</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_sdram_pll</arg>&gt; is unconnected or connected to loadless signal.
@@ -233,6 +233,9 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counterTest3_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">my_reg_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">my_reg_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -258,12 +261,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">my_reg_22</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">my_reg_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">my_reg_21</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counterTest2_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -306,6 +303,9 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counterSoftStop_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counterSoftStop_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">my_speed_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -383,9 +383,6 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">my_speed_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">my_reg_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">keyCount_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -461,9 +458,6 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">key1pushCount_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counterSoftStop_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">counterSoftStop_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
@@ -509,13 +503,13 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">keyCount_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">keyCountOld_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">keyCountOld_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">keyCountOld_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">keyCountOld_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">keyCountOld_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
